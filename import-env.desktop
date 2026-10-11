@@ -1,0 +1,5 @@
+[Desktop Entry]
+Type=Application
+Name=Import Environment to Systemd
+Exec=bash -c "systemctl --user import-environment DISPLAY WAYLAND_DISPLAY XDG_RUNTIME_DIR && systemctl --user restart wayland-spice-clipboard.service"
+X-KDE-autostart-phase=1
